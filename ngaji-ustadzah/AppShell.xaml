@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--<Shell
+    x:Class="ngaji_ustadzah.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ngaji_ustadzah"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Views.BacaanPage}"
+        Route="MainPage" />
+
+</Shell>-->
+
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:ngaji_ustadzah.Views"
+       x:Class="ngaji_ustadzah.AppShell">
+        <TabBar>
+       <ShellContent Title="1. Al Fatihah"
+                     ContentTemplate="{DataTemplate views:BacaanPage}" />
+               <ShellContent Title="back"
+                     ContentTemplate="{DataTemplate views:BacaanPage}" />
+    </TabBar>
+</Shell>
+

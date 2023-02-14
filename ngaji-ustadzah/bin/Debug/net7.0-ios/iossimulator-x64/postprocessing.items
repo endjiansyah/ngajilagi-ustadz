@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="ngaji-ustadzah.app/ngaji-ustadzah">
+      <BCSymbolMapName>ngaji-ustadzah.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>ngaji-ustadzah.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/obipranata/Documents/ngaji/ngaji-ustadzah/ngaji-ustadzah/obj/Debug/net7.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
+      <DSymName>ngaji-ustadzah.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/obipranata/Documents/ngaji/ngaji-ustadzah/ngaji-ustadzah</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>
