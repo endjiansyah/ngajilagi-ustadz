@@ -4,8 +4,10 @@
              x:Class="ngaji_ustadzah.Views.BacaanPage"
              Title="1. Al-Fatihah"
              >
-    <VerticalStackLayout>
-        
+
+    <ScrollView>
+        <VerticalStackLayout>
+
         <StackLayout
             HorizontalOptions="Fill"
             BackgroundColor="#FFEDAD"
@@ -17,18 +19,18 @@
                 HorizontalOptions="Center">
 
 
-            <Label
+                <Label
                 Text="Makkah"
                 FontSize="16"
                 />
-            <Label
+                <Label
                 FontAttributes="Bold"
                 Text="Pembukaan"
                 FontSize="16"
                 FontFamily="Nunito"
 
                 />
-            <Label
+                <Label
                 Text="7 Ayat"
                 FontSize="16"
                 />
@@ -36,207 +38,210 @@
             </StackLayout>
 
         </StackLayout>
-       
-        <Grid Margin="0,30" Padding="28,0">
+
+        <Grid Margin="0,30" Padding="28,0" RowSpacing="30">
             <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <BoxView Color="Transparent" Grid.Row="0" />
-            <Image Grid.Row="0" Source="ayat.png"
-               WidthRequest="44"
-               HeightRequest="44" HorizontalOptions="Start"/>
-            <Label Grid.Row="0"
-               Text="1"
-               HorizontalOptions="Start"
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontFamily="Nunito"
-               TextColor="White"
-               Margin="18,0"
-               />
-            <BoxView
+            <Image 
+                Grid.Row="0" 
+                Source="ayat.png"
+                WidthRequest="44"
+                HeightRequest="44"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                />
+            <Label 
                 Grid.Row="0"
-                Grid.Column="1"
-                Color="Transparent" />
+                Text="1"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                FontAttributes="Bold"
+                FontFamily="Lateef"
+                TextColor="White"
+                Margin="18,11"
+                />
             <Label
-                Grid.Row="0" Grid.Column="1"
+                Grid.Row="0" 
+                Grid.Column="1"
                 Text="بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ"
                 FontSize="20"
                 HorizontalOptions="End"
                 VerticalOptions="Center" />
-
-
-
-
-            <BoxView Color="Transparent" Grid.Row="1" />
-            <Image Grid.Row="1" Source="ayat.png"
-               WidthRequest="44"
-               HeightRequest="44" HorizontalOptions="Start"/>
-            <Label Grid.Row="1"
-               Text="2"
-               HorizontalOptions="Start"
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontFamily="Nunito"
-               TextColor="White"
-               Margin="18,0"
-               />
-            <BoxView
+            
+            <Image 
+                Grid.Row="1" 
+                Source="ayat.png"
+                WidthRequest="44"
+                HeightRequest="44"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                />
+            <Label 
                 Grid.Row="1"
-                Grid.Column="1"
-                Color="Transparent" />
+                Text="2"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                FontAttributes="Bold"
+                FontFamily="Lateef"
+                TextColor="White"
+                Margin="18,11"
+                />
             <Label
-                Grid.Row="1" Grid.Column="1"
+                Grid.Row="1" 
+                Grid.Column="1"
                 Text="اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَ"
                 FontSize="20"
                 HorizontalOptions="End"
                 VerticalOptions="Center" />
 
-
-
-
-
-
-            <BoxView Color="Transparent" Grid.Row="2" />
-            <Image Grid.Row="2" Source="ayat.png"
-               WidthRequest="44"
-               HeightRequest="44" HorizontalOptions="Start"/>
-            <Label Grid.Row="2"
-               Text="3"
-               HorizontalOptions="Start"
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontFamily="Nunito"
-               TextColor="White"
-               Margin="18,0"
-               />
-            <BoxView
+            <Image 
+                Grid.Row="2" 
+                Source="ayat.png"
+                WidthRequest="44"
+                HeightRequest="44"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                />
+            <Label 
                 Grid.Row="2"
-                Grid.Column="1"
-                Color="Transparent" />
+                Text="3"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                FontAttributes="Bold"
+                FontFamily="Lateef"
+                TextColor="White"
+                Margin="18,11"
+                />
             <Label
-                Grid.Row="2" Grid.Column="1"
+                Grid.Row="2" 
+                Grid.Column="1"
                 Text="الرَّحْمٰنِ الرَّحِيْمِ"
                 FontSize="20"
                 HorizontalOptions="End"
                 VerticalOptions="Center" />
 
-
-
-            <BoxView Color="Transparent" Grid.Row="3" />
-            <Image Grid.Row="3" Source="ayat.png"
-               WidthRequest="44"
-               HeightRequest="44" HorizontalOptions="Start"/>
-            <Label Grid.Row="3"
-               Text="4"
-               HorizontalOptions="Start"
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontFamily="Nunito"
-               TextColor="White"
-               Margin="18,0"
-               />
-            <BoxView
+            <Image 
+                Grid.Row="3" 
+                Source="ayat.png"
+                WidthRequest="44"
+                HeightRequest="44"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                />
+            <Label 
                 Grid.Row="3"
-                Grid.Column="3"
-                Color="Transparent" />
+                Text="4"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                FontAttributes="Bold"
+                FontFamily="Lateef"
+                TextColor="White"
+                Margin="18,11"
+            />
             <Label
-                Grid.Row="3" Grid.Column="1"
+                Grid.Row="3" 
+                Grid.Column="1"
                 Text="مٰلِكِ يَوْمِ الدِّيْنِ"
                 FontSize="20"
                 HorizontalOptions="End"
                 VerticalOptions="Center" />
 
 
-            <BoxView Color="Transparent" Grid.Row="4" />
-            <Image Grid.Row="4" Source="ayat.png"
-               WidthRequest="44"
-               HeightRequest="44" HorizontalOptions="Start"/>
-            <Label Grid.Row="4"
-               Text="5"
-               HorizontalOptions="Start"
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontFamily="Nunito"
-               TextColor="White"
-               Margin="18,0"
-               />
-            <BoxView
+            <Image 
+                Grid.Row="4" 
+                Source="ayat.png"
+                WidthRequest="44"
+                HeightRequest="44"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                />
+            <Label 
                 Grid.Row="4"
-                Grid.Column="4"
-                Color="Transparent" />
+                Text="5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                FontAttributes="Bold"
+                FontFamily="Lateef"
+                TextColor="White"
+                Margin="18,11"
+                />
             <Label
-                Grid.Row="4" Grid.Column="1"
+                Grid.Row="4" 
+                Grid.Column="1"
                 Text="اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُ"
                 FontSize="20"
                 HorizontalOptions="End"
                 VerticalOptions="Center" />
 
-
-
-            <BoxView Color="Transparent" Grid.Row="5" />
-            <Image Grid.Row="5" Source="ayat.png"
-               WidthRequest="44"
-               HeightRequest="44" HorizontalOptions="Start"/>
-            <Label Grid.Row="5"
-               Text="6"
-               HorizontalOptions="Start"
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontFamily="Nunito"
-               TextColor="White"
-               Margin="18,0"
-               />
-            <BoxView
+            <Image 
+                Grid.Row="5" 
+                Source="ayat.png"
+                WidthRequest="44"
+                HeightRequest="44"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                />
+            <Label 
                 Grid.Row="5"
-                Grid.Column="4"
-                Color="Transparent" />
+                Text="6"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                FontAttributes="Bold"
+                FontFamily="Lateef"
+                TextColor="White"
+                Margin="18,11"
+                /> 
+
             <Label
-                Grid.Row="5" Grid.Column="1"
+                Grid.Row="5" 
+                Grid.Column="1"
                 Text="اِھْدِنَا الصِّرَاطَ الْمُسْتَـقِيْمَ"
                 FontSize="20"
                 HorizontalOptions="End"
                 VerticalOptions="Center" />
 
 
-
-
-            <BoxView Color="Transparent" Grid.Row="6" />
-            <Image Grid.Row="6" Source="ayat.png"
-               WidthRequest="44"
-               HeightRequest="44" HorizontalOptions="Start"/>
-            <Label Grid.Row="6"
+            <Image 
+                Grid.Row="6" 
+                Source="ayat.png"
+                WidthRequest="44"
+                HeightRequest="44"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                />
+            <Label 
+               Grid.Row="6"
                Text="7"
                HorizontalOptions="Start"
-               VerticalOptions="Center"
+               VerticalOptions="Start"
                FontAttributes="Bold"
                FontFamily="Lateef"
                TextColor="White"
-               Margin="18,0"
+               Margin="18,11"
                />
-            <BoxView
-                Grid.Row="6"
-                Grid.Column="4"
-                Color="Transparent" />
+
             <Label
-                Grid.Row="6" Grid.Column="1"
+                Grid.Row="6" 
+                Grid.Column="1"
                 Text="صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ"
                 FontSize="20"
                 HorizontalOptions="End"
                 VerticalOptions="Center" />
-        
+
         </Grid>
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
