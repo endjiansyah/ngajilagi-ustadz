@@ -45,3 +45,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ngaji_ustadzah.Views.BacaanPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\BacaanPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\BacaanPage.xaml
+
+[C:/Users/Djatmiko/Source/Repos/endjiansyah/ngajilagi-ustadz/ngaji-ustadzah/Views/KitabPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ngaji_ustadzah.Views.KitabPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\KitabPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\KitabPage.xaml

@@ -2,246 +2,286 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ngaji_ustadzah.Views.BacaanPage"
-             Title="1. Al-Fatihah"
+             Shell.NavBarIsVisible="false"
              >
 
-    <ScrollView>
-        <VerticalStackLayout>
+    <Grid RowDefinitions="auto,*,auto">
 
-        <StackLayout
-            HorizontalOptions="Fill"
-            BackgroundColor="#FFEDAD"
-            >
-            <StackLayout
-                Spacing="32"
-                Padding="0,9"
-                Orientation="Horizontal"
-                HorizontalOptions="Center">
-
-
+        <VerticalStackLayout BackgroundColor="#88984A">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" HeightRequest="27">
                 <Label
-                Text="Makkah"
-                FontSize="16"
-                />
-                <Label
-                FontAttributes="Bold"
-                Text="Pembukaan"
-                FontSize="16"
-                FontFamily="Nunito"
+                    FontFamily=""
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="1. Al-Fatihah"
+                    FontSize="12"
+                    FontAttributes="Bold"
+                    TextColor="White"/>
 
+            </HorizontalStackLayout>
+
+                <Grid ColumnDefinitions="*,*,*" BackgroundColor="#FFEDAD" HeightRequest="40">
+                <Label
+                    VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                    Grid.Column="0"
+                    Text="Makkah"
+                    FontSize="16"
                 />
                 <Label
-                Text="7 Ayat"
-                FontSize="16"
+                    VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                    Grid.Column="1"
+                    FontAttributes="Bold"
+                    Text="Pembukaan"
+                    FontSize="16"
+                    FontFamily="Nunito"
+
+                />
+                <Label
+                    VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                    Grid.Column="2"
+                    Text="7 Ayat"
+                    FontSize="16"
+                />
+            </Grid>
+        </VerticalStackLayout>
+
+        <ScrollView Grid.Row="1" Scrolled="OnScroll">
+            <Grid Margin="0,30" Padding="28,0" RowSpacing="30" RowDefinitions="*,*,*,*,*,*,*"
+                ColumnDefinitions="60,*">
+
+                <Image 
+                    Grid.Row="0" 
+                    Grid.Column="0"
+                    Source="ayat.png"
+                    WidthRequest="44"
+                    HeightRequest="44"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                />
+                <Label 
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Text="1"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    FontFamily="Lateef"
+                    TextColor="White"
+                    Margin="18,11"
+                />
+                <Label
+                    Grid.Row="0" 
+                    Grid.Column="1"
+                    Text="بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ"
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center" 
+                />
+                <!---->
+
+                <Image
+                    Grid.Column="0"
+                    Grid.Row="1" 
+                    Source="ayat.png"
+                    WidthRequest="44"
+                    HeightRequest="44"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                />
+                <Label 
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="2"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    FontFamily="Lateef"
+                    TextColor="White"
+                    Margin="18,11"
+                />
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَ"
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center" 
+                />
+                <!---->
+    
+                <Image 
+                    Grid.Row="2" 
+                    Grid.Column="0"
+                    Source="ayat.png"
+                    WidthRequest="44"
+                    HeightRequest="44"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                />
+                <Label 
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Text="3"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    FontFamily="Lateef"
+                    TextColor="White"
+                    Margin="18,11"
+                />
+                <Label
+                    Grid.Row="2" 
+                    Grid.Column="1"
+                    Text="الرَّحْمٰنِ الرَّحِيْمِ"
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center" 
+                />
+                <!---->
+
+                <Image 
+                    Grid.Row="3" 
+                    Grid.Column="0"
+                    Source="ayat.png"
+                    WidthRequest="44"
+                    HeightRequest="44"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                />
+                <Label 
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Text="4"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    FontFamily="Lateef"
+                    TextColor="White"
+                    Margin="18,11"
+                />
+                <Label
+                    Grid.Row="3" 
+                    Grid.Column="1"
+                    Text="مٰلِكِ يَوْمِ الدِّيْنِ"
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center" 
+                />
+                <!---->
+
+                <Image 
+                    Grid.Row="4" 
+                    Grid.Column="0"
+                    Source="ayat.png"
+                    WidthRequest="44"
+                    HeightRequest="44"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                />
+                <Label 
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Text="5"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    FontFamily="Lateef"
+                    TextColor="White"
+                    Margin="18,11"
+                />
+                <Label
+                    Grid.Row="4" 
+                    Grid.Column="1"
+                    Text="اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُ"
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center" 
+                />
+                <!---->
+
+                <Image 
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Source="ayat.png"
+                    WidthRequest="44"
+                    HeightRequest="44"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                />
+                <Label 
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Text="6"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    FontFamily="Lateef"
+                    TextColor="White"
+                    Margin="18,11"
                 />
 
-            </StackLayout>
-
-        </StackLayout>
-
-        <Grid Margin="0,30" Padding="28,0" RowSpacing="30">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition Height="2*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-
-            <Image 
-                Grid.Row="0" 
-                Source="ayat.png"
-                WidthRequest="44"
-                HeightRequest="44"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
+                <Label
+                    Grid.Row="5" 
+                    Grid.Column="1"
+                    Text="اِھْدِنَا الصِّرَاطَ الْمُسْتَـقِيْمَ"
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
                 />
-            <Label 
-                Grid.Row="0"
-                Text="1"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                FontAttributes="Bold"
-                FontFamily="Lateef"
-                TextColor="White"
-                Margin="18,11"
-                />
-            <Label
-                Grid.Row="0" 
-                Grid.Column="1"
-                Text="بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ"
-                FontSize="20"
-                HorizontalOptions="End"
-                VerticalOptions="Center" />
-            
-            <Image 
-                Grid.Row="1" 
-                Source="ayat.png"
-                WidthRequest="44"
-                HeightRequest="44"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                />
-            <Label 
-                Grid.Row="1"
-                Text="2"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                FontAttributes="Bold"
-                FontFamily="Lateef"
-                TextColor="White"
-                Margin="18,11"
-                />
-            <Label
-                Grid.Row="1" 
-                Grid.Column="1"
-                Text="اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَ"
-                FontSize="20"
-                HorizontalOptions="End"
-                VerticalOptions="Center" />
+                <!---->
 
-            <Image 
-                Grid.Row="2" 
-                Source="ayat.png"
-                WidthRequest="44"
-                HeightRequest="44"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
+                <Image 
+                    Grid.Row="6" 
+                    Grid.Column="0"
+                    Source="ayat.png"
+                    WidthRequest="44"
+                    HeightRequest="44"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
                 />
-            <Label 
-                Grid.Row="2"
-                Text="3"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                FontAttributes="Bold"
-                FontFamily="Lateef"
-                TextColor="White"
-                Margin="18,11"
-                />
-            <Label
-                Grid.Row="2" 
-                Grid.Column="1"
-                Text="الرَّحْمٰنِ الرَّحِيْمِ"
-                FontSize="20"
-                HorizontalOptions="End"
-                VerticalOptions="Center" />
-
-            <Image 
-                Grid.Row="3" 
-                Source="ayat.png"
-                WidthRequest="44"
-                HeightRequest="44"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                />
-            <Label 
-                Grid.Row="3"
-                Text="4"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                FontAttributes="Bold"
-                FontFamily="Lateef"
-                TextColor="White"
-                Margin="18,11"
-            />
-            <Label
-                Grid.Row="3" 
-                Grid.Column="1"
-                Text="مٰلِكِ يَوْمِ الدِّيْنِ"
-                FontSize="20"
-                HorizontalOptions="End"
-                VerticalOptions="Center" />
-
-
-            <Image 
-                Grid.Row="4" 
-                Source="ayat.png"
-                WidthRequest="44"
-                HeightRequest="44"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                />
-            <Label 
-                Grid.Row="4"
-                Text="5"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                FontAttributes="Bold"
-                FontFamily="Lateef"
-                TextColor="White"
-                Margin="18,11"
-                />
-            <Label
-                Grid.Row="4" 
-                Grid.Column="1"
-                Text="اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُ"
-                FontSize="20"
-                HorizontalOptions="End"
-                VerticalOptions="Center" />
-
-            <Image 
-                Grid.Row="5" 
-                Source="ayat.png"
-                WidthRequest="44"
-                HeightRequest="44"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                />
-            <Label 
-                Grid.Row="5"
-                Text="6"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                FontAttributes="Bold"
-                FontFamily="Lateef"
-                TextColor="White"
-                Margin="18,11"
-                /> 
-
-            <Label
-                Grid.Row="5" 
-                Grid.Column="1"
-                Text="اِھْدِنَا الصِّرَاطَ الْمُسْتَـقِيْمَ"
-                FontSize="20"
-                HorizontalOptions="End"
-                VerticalOptions="Center" />
-
-
-            <Image 
-                Grid.Row="6" 
-                Source="ayat.png"
-                WidthRequest="44"
-                HeightRequest="44"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                />
-            <Label 
-               Grid.Row="6"
-               Text="7"
-               HorizontalOptions="Start"
-               VerticalOptions="Start"
-               FontAttributes="Bold"
-               FontFamily="Lateef"
-               TextColor="White"
-               Margin="18,11"
+                <Label 
+                   Grid.Row="6"
+                   Grid.Column="0"
+                   Text="7"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start"
+                   FontAttributes="Bold"
+                   FontFamily="Lateef"
+                   TextColor="White"
+                   Margin="18,11"
                />
 
-            <Label
-                Grid.Row="6" 
-                Grid.Column="1"
-                Text="صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ"
-                FontSize="20"
-                HorizontalOptions="End"
-                VerticalOptions="Center" />
+                <Label
+                    Grid.Row="6" 
+                    Grid.Column="1"
+                    Text=". صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ ."
+                    FontSize="20"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center" 
+                />
 
-        </Grid>
+            </Grid>
 
-    </VerticalStackLayout>
-    </ScrollView>
+        </ScrollView>
+        <Button
+            Grid.Row="2"
+            Text="Aktifkan Tuding"
+            BorderColor="#B0CBFF"
+            BackgroundColor="#B0CBFF"
+            TextColor="Black"
+            ImageSource="tuding.png"
+            FontFamily=""
+            FontAttributes="Bold"
+            WidthRequest="161"
+            HeightRequest="80"
+            CornerRadius="60"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0.5,0.9,161,80"
+            AbsoluteLayout.LayoutFlags="All"
+            />
+    </Grid>
 </ContentPage>

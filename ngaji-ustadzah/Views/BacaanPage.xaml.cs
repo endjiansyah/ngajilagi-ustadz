@@ -6,4 +6,9 @@ public partial class BacaanPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    void OnScroll(Object sender, ScrolledEventArgs e)
+    {
+        ScrollView scroll = new ScrollView();
+        scroll.Scrolled += OnScroll;
+    }
 }

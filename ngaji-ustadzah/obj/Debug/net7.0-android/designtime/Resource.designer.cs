@@ -8277,6 +8277,9 @@ namespace ngaji_ustadzah
 			// aapt resource value: 0x7F0700D5
 			public const int tooltip_frame_light = 2131165397;
 			
+			// aapt resource value: 0x7F0700D6
+			public const int tuding = 2131165398;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

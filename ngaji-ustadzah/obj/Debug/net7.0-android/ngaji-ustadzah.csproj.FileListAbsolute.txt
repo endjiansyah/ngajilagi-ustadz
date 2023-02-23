@@ -962,6 +962,7 @@ C:\Users\Djatmiko\Source\Repos\endjiansyah\ngajilagi-ustadz\ngaji-ustadzah\obj\D
 C:\Users\Djatmiko\Source\Repos\endjiansyah\ngajilagi-ustadz\ngaji-ustadzah\obj\Debug\net7.0-android\android\compressed_assemblies.x86_64.o
 C:\Users\Djatmiko\Source\Repos\endjiansyah\ngajilagi-ustadz\ngaji-ustadzah\obj\Debug\net7.0-android\android\jni_remap.x86_64.o
 C:\Users\Djatmiko\Source\Repos\endjiansyah\ngajilagi-ustadz\ngaji-ustadzah\obj\Debug\net7.0-android\app_shared_libraries\x86_64\libxamarin-app.so
+C:\Users\Djatmiko\Source\Repos\endjiansyah\ngajilagi-ustadz\ngaji-ustadzah\obj\Debug\net7.0-android\resizetizer\r\drawable\tuding.png
 C:\Users\Djatmiko\Source\Repos\endjiansyah\ngajilagi-ustadz\ngaji-ustadzah\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\Users\Djatmiko\Source\Repos\endjiansyah\ngajilagi-ustadz\ngaji-ustadzah\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\Djatmiko\Source\Repos\endjiansyah\ngajilagi-ustadz\ngaji-ustadzah\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll

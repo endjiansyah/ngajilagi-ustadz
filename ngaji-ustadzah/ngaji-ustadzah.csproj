@@ -53,18 +53,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\tuding.png" />
 	  <None Remove="Views\" />
-	  <None Remove="Resources\Images\Vector.png" />
 	  <None Remove="Resources\Styles\appicon.svg" />
 	  <None Remove="Resources\AppIcon\ayat.png" />
 	  <None Remove="Resources\Images\appicon.svg" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Views\" />
-	</ItemGroup>
-	<ItemGroup>
 	  <MauiXaml Update="Views\BacaanPage.xaml">
 	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\KitabPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
